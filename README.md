@@ -11,26 +11,6 @@ To address the structural drift during sequential updates, we propose **CSPL-ReI
 - **PDRC**: Uses a frozen previous model and prototype bank to retain historical relations.
 - **GSPC**: Limits the shift toward the final task via group-specific parameter fusion.
 
-## 🛠️ Requirements
-
-- Python 3.8
-- PyTorch 2.0.0
-- CUDA 11.8
-
-You can install the required packages via:
-```bash
-pip install -r requirements.txt# CSPL-ReID
-📂 Data Preparation
-We evaluate our method on four datasets: RegDB, SYSU-MM01, LLCM, and VCM.
-Please download the datasets and organize them in the data/ directory as follows:
-
-text
-data/
-├── RegDB/
-├── SYSU-MM01/
-├── LLCM/
-└── VCM/
-
 ## 📊 Results
 
 ### Comparison with State-of-the-Art Methods
@@ -57,3 +37,13 @@ We compare CSPL-ReID with existing lifelong VI-ReID methods. Results are reporte
 | LSTKC++ | Non-Replay | 19.2 / 19.0 | 27.1 / 30.3 | 32.9 / 29.2 | 16.1 / 29.2 | 23.8 / 26.9 |
 | CKDA | Non-Replay | 57.0 / 60.4 | 34.7 / 37.3 | 37.8 / 31.5 | 15.6 / 28.2 | 36.3 / 39.4 |
 | **Ours** | **Non-Replay** | **64.5 / 69.5** | **38.4 / 41.2** | **39.2 / 33.3** | **16.8 / 29.2** | **39.7 / 43.3** |
+
+## 🛠️ Requirements
+
+- Python 3.8
+- PyTorch 2.0.0
+- CUDA 11.8
+
+You can install the required packages via:
+```bash
+pip install -r requirements.txt# CSPL-ReID
