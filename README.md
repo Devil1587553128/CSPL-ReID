@@ -47,3 +47,15 @@ We compare CSPL-ReID with existing lifelong VI-ReID methods. Results are reporte
 You can install the required packages via:
 ```bash
 pip install -r requirements.txt# CSPL-ReID
+
+
+📂 Data Preparation
+We evaluate our method on four datasets: RegDB, SYSU-MM01, LLCM, and VCM.
+Please download the datasets and organize them in the data/ directory as follows:
+
+text
+data/
+├── RegDB/
+├── SYSU-MM01/
+├── LLCM/
+└── VCM/
